@@ -107,14 +107,14 @@
     <button class="slide-btn" id="btn-right">&#62;</button>
 </div>
 </section>
-               
-                <section   id="commentaire">
+               <section   id="commentaire">
                     <div class="Titre">
-                        <h3>What people are saying-Témoignages</h3>
+                        <h2>Ce que disent nos passagers</h2>
+                        <h5>Premières réactions de nos passagers, voulez-vous ajouter la vôtre ?</h5>
                     </div>
                     <!-- Commentaire 1 -->
                     
-                    <article>
+                    <div class="comments">
                         <div class="comments-container">
                             <div class="avatar">
                                 <img src="image/Avatar(1).jpg" alt="avatar">
@@ -126,11 +126,11 @@
                             </p>
                             <p class="date_commentaire">Il y a 2 heures</p>
                         </div>
-                    </article>
+                    
         
 
                     <!-- Commentaire 2 -->
-                    <article>
+                    
                         <div class="comments-container">
                             <div class="avatar">
                                 <img src="image/Avatar(2).jpg" alt="avatar">
@@ -142,10 +142,10 @@
                             </p>
                             <p class="date_commentaire">Il y a 1 heure</p>
                         </div>
-                    </article>
+                    
 
                     <!-- Commentaire 3 -->
-                    <article>
+                    
                         <div class="comments-container">
                             <div class="avatar">
                                 <img src="image/Avatar(3).jpg" alt="avatar">
@@ -158,9 +158,9 @@
                             <p class="date_commentaire">Il y a 30 minutes</p>
                         </div>
                    
-                    </article>
+                   
                     <!-- Commentaire 4 -->
-                    <article >
+                    
                         <div class="comments-container">
                             <div class="avatar">
                                 <img src="image/Avatar(4).jpg" alt="avatar">
@@ -172,15 +172,23 @@
                         </p>
                         <p class="date_commentaire">Il y a 5 minutes</p>
                     </div>
-                    </article>
-
-                    <!-- Formulaire pour écrire un nouveau commentaire -->
-                    <form class="champs_commentaire">
-                        <textarea cols="50" rows="2" placeholder="entrez votre commentaires"></textarea>
-                            <button type="submit">Envoyer</button>
+                </div>
+                    <!--Bouton-->
+                     <div class="ajout-commentaire" id="titleForm">
+                        Ajouter un commentaire -> 
+                     </div>
+                     <div id="successMessage" class="success" style="display:none;">
+                                Commentaire envoyé !
+                     </div>
+                       <form class="champs_commentaire" id="commentForm">
+                        <input type="text" placeholder="Votre nom" required>
+                        <input type="text" placeholder="Votre rôle/@username" required>
+                        <textarea cols="50" rows="2" placeholder="Votre commentaires..."></textarea>
+                        <button type="submit">Publier</button>
                     </form>
                 </section>
 
+               
                 
                 <section id="aide">
                 <div class="Aide">
@@ -317,6 +325,7 @@ En moins de deux minutes, découvrez comment utiliser notre site pour trouver vo
 
     </body>
 </html>    
+
 
 
 
