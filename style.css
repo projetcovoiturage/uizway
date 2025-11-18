@@ -424,4 +424,62 @@ nav{
     margin-bottom: 15px;
     font-weight: bold;
 }
+/* notre équipe */
 
+.equipe {
+    background-color: rgb(21, 21, 75);
+    color: antiquewhite;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+.mission {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.devlps {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section img {
+    height: 220px;
+    width: 200px;
+    border: 4px groove rgb(27, 27, 129);
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.dev {
+    background-color: #2a2a6b;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+a {
+    color: antiquewhite;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(73, 128, 36);
+}
+
+.dev a {
+    margin: 0 10px;
+    font-size: 24px;
+}
