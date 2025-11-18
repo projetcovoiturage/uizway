@@ -72,7 +72,7 @@
 
 
 
-a {
+.contact-conducteur {
     color:white;
     background-color: #002366;
     border: 1.5px solid ;
@@ -83,7 +83,7 @@ a {
 
 }
 
-a:hover {
+.contact-conducteur:hover {
     background-color: white;
     color:#002366;
     border: 1.5px solid ;
