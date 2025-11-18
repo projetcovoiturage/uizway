@@ -293,6 +293,12 @@ nav{
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
+
+@keyframes drive {
+    0% { left: -150px; }
+    100% { left: 0%; } 
+}
+
 /*--------------------------Commentaires------------------------*/
 
 .Titre h2 , .Titre h5{
@@ -375,11 +381,6 @@ nav{
     color:white;
 }
 
-
-@keyframes drive {
-    0% { left: -150px; }
-    100% { left: 0%; } 
-}
 
 .comments {
     display: grid;
@@ -602,6 +603,7 @@ a:hover {
     transform: scale(1.05);
     
 }
+
 
 
 
