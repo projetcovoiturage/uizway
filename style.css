@@ -1,112 +1,169 @@
 *{
     margin:0;
     padding:0;
-    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+
+
+}
+.container{
+    display: grid;
+    height:100vh;
+    background:linear-gradient(to bottom right, #002366, lightgray);
+    grid-template-columns: 1fr;
+
+  
+    grid-template-rows: auto auto;
+
+    gap: 2vh;
+
+    grid-template-areas:
+        "header"
+        "nav";
+  
+         overflow-x:hidden;
+  
 }
 
+header {
+    display: grid;
+    grid-template-columns: 20% 1fr 10%;
+    align-items:flex-start;
 
-header{
-    position:absolute;
-    width:100%;
-    border:1px solid #002366;
-    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.5);
-    background-color:white;
-    z-index:1000;
+    height:15vh;
+    width: 100%;
+
+    padding: 0 3vw;
     position: fixed;
-    height:8%;    
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    top: -1vh;
 }
+
 .logo{
-    color:#002366;
-    float: left;
-    position:absolute;
-    animation: drive 3s ease-in-out 1;
-}
-.logo1 img{
-    width:40%;
-    height:12%;
-    position:relative;
-    top:-21px;
-    left:58px
-}
-.logo2 img{
-    width:20%;
-    position:relative;
-    top:-95px;
-    left:120px
-}
-.logo #Z{
-    position:relative;
-    top:-124px ; 
-    left:205px;
-    font-weight: bold;
-    font-size:90%
-}
-
-
-.menu{
-    float:right;
-    width:60%;
-}
-.menu ul{
-    position:relative;
-    top:-13px
+    display:inline-flex;
     
 }
-.menu ul li{
-    padding:3% 1.5%;
-    display:inline-flex;
+
+.logo img {
+    height: 150px;  
+    width: auto;   
+    margin-top:-3vh;
+    margin-left:6vh
 }
-.menu ul li a{
+
+.menu {
+    display: flex;     
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh ;
+
+    margin-top:6vh
+}
+
+.menu ul {
+    display: grid;        
+    grid-template-columns: 18% 18% 18% 18% 18% 18% ;
+    gap:;
+    width: 80%;         
+    list-style: none;
+   
+}
+
+.menu ul li {
+    text-align: center;
+}
+.menu ul li a {
     text-decoration: none;
-    color:#002366;
-    text-transform: capitalize;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-
+    color: lightgray;
+    font-size: 2.9vh;
+    font-weight: bolder;
+    position: relative;      
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-.menu ul li a:hover{
+
+
+.menu ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color: #002366;
+    transition: width 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #002366;
+    transform: translateY(-3px); 
+}
+
+
+.menu ul li a:hover::after {
+    width: 100%;
+}
+.icone {
+    justify-self:flex-start; 
+    align-self:;   
     color:lightgrey;
-}
-/* ------ Acueill-----*/
-nav{
-    background-image:linear-gradient(135deg, rgba(0,35,102,0.5), rgba(0,74,173,0.5)),url('image/back4.png');
-    height:590px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-   
-}
-.welcome{
-    position:absolute;
-    text-align:center;
-    color:lightgray;
-    width:50%;
-    margin-top:12%;
-    margin-left:100px;
-    float:left;
-}
-.welcome h1{
-    margin:10% 10% 3% 10% ;
-    text-shadow: 2px 2px 6px black;
-    font-size:200%;
-   
+    margin-top:7vh
 
 }
-.welcome p{
-    margin-left:7%;
+.icone:hover{
+    color:#002366;
+}
+nav{
+    height:75vh;     
+    width: 100%;   
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 10px;
+    grid-template-areas:
+        "titre vide"
+        "text vide"
+        "bouton vide";
+    position:relative;
+    top:20vh;
+
+}
+.titre { grid-area: titre; }
+.titre h1{
+    color:lightgray;
+    font-size:300%;
+    text-shadow: 2px 2px 6px black;
+    margin-left:15vh;
+    margin-top:10vh;
+}
+.titre h2{
+    color:#002366;
+    font-size:150%;
+   text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    margin-left:15vh
+}
+.text { 
+    grid-area: text;
+   
+    
+}
+.text p{
     line-height: 150%;
     font-size:120%;
+    color:lightgray;
+    margin-left:15vh
 }
-.btn1 {
-    position: relative;
-    left:-5%;
-    top: 22.5px;
-
-    background-color: white;
+.bouton { grid-area: bouton;
+    margin-left:15vh
+ }
+.btn1{
+     position: relative;
+    
+    background-color: lightgray;
     color: #002366;
     font-weight: bold;
     font-size: 1rem;
-
     padding: 10px 16px;       
     border-radius: 50px;        
     border: 2px solid #002366; 
@@ -114,9 +171,8 @@ nav{
     cursor: pointer;
     transition: all 0.3s ease;
 
-    display: inline-block;    
+    display: inline-block; 
 }
-
 
 .btn1:hover {
     color: lightgrey;
@@ -127,10 +183,9 @@ nav{
 
 .btn2 {
     position: relative;
-    left: ;
-    top: 20px;
+   
 
-    background-color: white;
+    background-color: lightgrey;
     color: #002366;
     font-weight: bold;
     font-size: 1rem;
@@ -143,162 +198,23 @@ nav{
     cursor: pointer;
     transition: all 0.3s ease;
 
-    display: inline-block;    
+    display: inline-block;   
+    margin-left:4%;
+    
  }
 
 .btn2:hover {
     background-color: #002366;
     color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
     transform: scale(1.05);
 }
-
-.trajet h3{
-    color:lightgray;
-    margin:5px;
-}
-.trajet {
-    float:right;
-    max-width: 200px;      
-    margin: 0 auto;       
-    padding: 30px 20px;
-    background-color: #f5f5f5; 
-    border-radius: 20px;   
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
-    text-align: center;
+.vide { grid-area: vide; }
+.vide img{
+    margin-left:10vh;
     position:relative;
-    top:30%;
-    right:10%;
+    top:-5vh 
 }
-
-.trajet h3 {
-    color: #002366;
-    margin-bottom: 20px;
-    font-size: 22px;
-}
-
-.trajet .search-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;              
-}
-
-.trajet .search-form input {
-    padding: 12px 15px;
-    border-radius: 12px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    outline: none;
-    transition: 0.3s;
-}
-
-.trajet .search-form input:focus {
-    border-color: #002366;
-    box-shadow: 0 0 8px rgba(0, 35, 102, 0.4);
-}
-
-.trajet .search-form button {
-    padding: 8px ;
-    border: none;
-    border-radius: 6%;
-    background-color: #002366;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-    width:100px;
-    margin-left:50%;
-}
-
-.trajet .search-form button:hover {
-    background-color: lightgray;
-    color: #002366;
-}
-/*---------------A propos --*/
-.image{
-    height:300px;
-    width:100px;
-    float:right;
-    width:50%;
-    position:relative;
-    top:100px;
-    right:20px;
-}
-
-.aproposdenous img{
-    width:200px;
-    height:300px;
-}
-.aproposdenous .texte {
-    float:left;
-    width:60%;
-
-}
-.aproposdenous .texte p{
-   
-    text-align:start;
-    margin-top:50px;
-    margin-left:30px;
-}
-.aproposdenous {
-    padding: 60px 40px;
-    background-color: #f7f7f7;
-}
-
-.aproposdenous h2 {
-    text-align: center;
-    color: #002366;
-    margin-bottom: 40px;
-    font-size: 30px;
-}
-
-.aproposdenous {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.aproposdenous .contenu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1100px;
-}
-
-
-.aproposdenous .texte {
-    flex: 1;
-    min-width: 300px;
-}
-
-.aproposdenous .texte p {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #333;
-}
-
-
-.aproposdenous .voiture {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-}
-
-.aproposdenous .voiture img {
-    width: 90%;
-    max-width: 450px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-}
-
-@keyframes drive {
-    0% { left: -150px; }
-    100% { left: 0%; } 
-}
-
 /*--------------------------Commentaires------------------------*/
 
 .Titre h2 , .Titre h5{
@@ -603,6 +519,7 @@ a:hover {
     transform: scale(1.05);
     
 }
+
 
 
 
