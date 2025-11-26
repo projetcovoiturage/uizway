@@ -413,8 +413,8 @@ nav{
 /* notre équipe */
 
 .equipe {
-    background-color: rgb(21, 21, 75);
-    color: antiquewhite;
+    background-color: lightgrey;
+    color: #002366;
     margin: 0px;
     padding: 20px;
     text-align: center;
@@ -430,28 +430,28 @@ nav{
 
 .devlps {
     display: flex;
-    gap: 30px;
+    gap: 10px;
     margin: 0;
     padding: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    
+   
 }
 
-section img {
+.dev img {
     height: 220px;
     width: 200px;
-    border: 4px groove rgb(27, 27, 129);
+    border: 1.5px groove #002366;
     border-radius: 10px;
     object-fit: cover;
 }
 
 .dev {
-    background-color: #2a2a6b;
+    background-color: lightgrey;
     border-radius: 10px;
     padding: 20px;
     width: 250px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px #002366
 }
 
 
@@ -462,14 +462,14 @@ a {
 }
 
 a:hover {
-    color: rgb(73, 128, 36);
+    color: rgb(184, 182, 207);
 }
 
 .dev a {
     margin: 0 10px;
     font-size: 24px;
+    color: rgb(21, 21, 75);
 }
-
 
 /*----------------Conducteurs-----------------*/
 .section-container {
@@ -588,6 +588,7 @@ a:hover {
     transform: scale(1.05);
     
 }
+
 
 
 
