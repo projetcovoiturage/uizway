@@ -348,10 +348,9 @@ nav{
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
-    /*height: 90px;*/
     border-radius: 8px;
     border: none;
-    background: #bbb;
+    background: lightgray;
     color: white;
 }
 
@@ -373,6 +372,7 @@ nav{
 }
 
 
+
 .comments {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
@@ -384,11 +384,13 @@ nav{
 #titleForm {
     color: #002366;
     border: 1.5px solid;
-    border-radius: 10px;
+    border-radius: 25px;
     margin-bottom: 15px;
-    margin-right: 35%;
-    margin-left: 35%;
-    margin-top: 50px;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-top: 15px;
+    height:20px;
+    padding:8px;
     text-align: center;
     font-size: 16px;
     font-weight: bold;
@@ -415,6 +417,14 @@ nav{
     border-radius: 10px;
     margin-bottom: 15px;
     font-weight: bold;
+}
+
+
+#commentForm {
+    display:flex;
+     margin: 20px auto;
+    align-items: center;
+    
 }
 /* notre équipe */
 
@@ -597,6 +607,7 @@ a:hover {
     
     
 }
+
 
 
 
