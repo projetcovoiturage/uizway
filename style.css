@@ -506,10 +506,13 @@ a:hover {
 
 
 .card {
-    width: 100%;
-    padding: 50px;
+   width: 100%;
+    padding-top:25px ;
+    padding-bottom:25px ;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-right: 15px;
-    background:  #f7f7f7;
+    background:linear-gradient(to bottom right,#002366,lightgray)   ;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -517,44 +520,46 @@ a:hover {
     font-weight: bold;
     flex-direction: column;
     gap: 5px;
+    border:1.5px solid lightgray;
 }
 
 
 .card:hover {
- box-shadow: 0 3px 10px rgba(0,0,0,0.1)  inset;
+ box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1) ;
  border:2px solid #002366;
  }
 
 
 .card img {
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 250px;
     margin-bottom: 2px;
     margin-top: 5px;
-    border-radius: 10px;
-    object-fit: contain;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 
 
 .card h3 {
-    margin: 0;
+   margin: 0;
     font-size: 16px;
+    color:#002366;
 }
 
 
 .card p {
-    margin: 5px 0;
+   margin: 5px 0;
     font-size: 14px;
-    color: #555;
+    color: lightgray;
 }
 
 
 
 .contact-conducteur {
-    color:white;
-    background-color: #002366;
-    border: 1.5px solid ;
+     color:white;
+    background-color:  lightgray;
+    border: 1.5px solid #002366;
     padding: 15px;
     border-radius: 15px;
     text-decoration: none;
@@ -563,16 +568,14 @@ a:hover {
 }
 
 .contact-conducteur:hover {
-    background-color: white;
-    color:#002366;
-    border: 1.5px solid ;
-
-
-
+    color: lightgrey;
+    background-color: #002366;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);   
 }
 
 .slide-btn {
-    width: 40px;
+   width: 40px;
     height: 40px;
     border: 2px solid #002366; 
     color: #002366;
@@ -587,14 +590,13 @@ a:hover {
 }
 
 
-
 .slide-btn:hover {
-    background-color: #002366;
+   background-color: #002366;
     color:#f0f0f0;
     transform: scale(1.05);
     
+    
 }
-
 
 
 
