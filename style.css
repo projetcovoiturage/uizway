@@ -314,6 +314,7 @@ nav{
     border-radius: 50%;
     object-fit:cover; 
     object-position: top center;
+ 
 }
 
 .contenu {
@@ -350,27 +351,37 @@ nav{
     width: 100%;
     padding: 12px;
     margin-bottom: 15px;
+    margin:auto;
     border-radius: 8px;
     border: none;
-    background: lightgray;
-    color: white;
+    background: white;
+    color: black;
+    border:1px solid #002366;
 }
+ 
+form {
+   margin-right:35%;
+   margin-left:35%;
 
-
+}
 .champs_commentaire button {
     margin-top: 10px;
-    padding: 10px 20px;
-    background: white;
-    color: #002366;
-    border: 1.5px solid #002366;
+    padding: 5px;
+    margin-right:35%;
+    margin-left: 35%;
+    background: lightgray;
+    color: white;
+    border: 2px solid #002366;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
 }
 
 .champs_commentaire button:hover {
-    background: #002366;
-    color:white;
+     color: lightgrey;
+    background-color: #002366;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);   
 }
 
 
@@ -422,12 +433,7 @@ nav{
 }
 
 
-#commentForm {
-    display:flex;
-     margin: 20px auto;
-    align-items: center;
-    
-}
+
 /* notre équipe */
 
 .equipe {
@@ -609,6 +615,7 @@ a:hover {
     
     
 }
+
 
 
 
