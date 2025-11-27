@@ -13,6 +13,7 @@ body {
     background: linear-gradient(rgba(10, 18, 55, 0.85), rgba(10, 18, 55, 0.95)),
                 url("formbackground.jpg") center/cover no-repeat;
     background-attachment: fixed; 
+    background:linear-gradient(to bottom right, #002366, lightgray);
 }
 
 header {
@@ -165,4 +166,5 @@ header {
         font-size: 1.1rem;
         padding: 15px 30px;
     }
+
 }
