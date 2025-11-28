@@ -623,7 +623,7 @@ a:hover {
 .card h3 {
    margin: 0;
     font-size: 16px;
-    color:#002366;
+    color:lightgray;
 }
 
 
@@ -929,6 +929,7 @@ a:hover {
         top: 100px;
     }
 }
+
 
 
 
