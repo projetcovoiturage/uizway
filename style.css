@@ -34,7 +34,7 @@ background-size: 100% 100%;
   
 }
 
-header {
+#header {
     display: grid;
     /* 3 colonnes flexibles : logo – menu – icône */
     grid-template-columns: 20% 1fr 10%;
@@ -60,8 +60,8 @@ header {
     */
    
 }
-header.scrolled {
-    background: #000;  /* couleur quand on descend */
+#header.scrolled {
+    background: #002366;  
 }
 
 .logo{
@@ -929,6 +929,7 @@ a:hover {
         top: 100px;
     }
 }
+
 
 
 
