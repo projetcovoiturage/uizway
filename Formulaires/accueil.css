@@ -78,11 +78,22 @@ header {
     color: var(--text-light); /* Titre en clair */
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
-
+#nomPassager{
+    color: var(--primary-blue);
+}
 #nomConducteur {
     color: var(--primary-blue);
 }
-
+#photoPassager{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-blue);
+    box-shadow: 0 0 25px rgba(60, 126, 255, 0.7); 
+    margin-bottom: 40px;
+    animation: pulse 2s infinite alternate;
+}
 #photoConducteur {
     width: 150px;
     height: 150px;
@@ -165,3 +176,4 @@ header {
         padding: 15px 30px;
     }
 }
+
