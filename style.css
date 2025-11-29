@@ -500,64 +500,170 @@ form {
 /* notre équipe */
 
 .equipe {
-    background-color: lightgrey;
+    background-color: white;
     color: #002366;
     margin: 0px;
-    padding: 20px;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .mission {
     text-align: center;
     max-width: 800px;
     margin: 20px auto;
-    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
     line-height: 1.6;
+    padding-bottom: 40px;
+    
 }
+
 
 .devlps {
     display: flex;
-    gap: 10px;
-    margin: 0;
+    gap: 40px;
+    margin: 0 ;
     padding: 20px;
+    position: relative;
+    top:-50px;
+    background-color: white;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    right: 40px;
+    left:40px;
     
-   
+
 }
 
 .dev img {
-    height: 220px;
-    width: 200px;
-    border: 1.5px groove #002366;
-    border-radius: 10px;
+    height: 250px;
+    width: 220px;
+    border:  groove white;
+    border-radius: 60%;
     object-fit: cover;
 }
 
 .dev {
-    background-color: lightgrey;
+    background-color:white;
     border-radius: 10px;
-    padding: 20px;
-    width: 250px;
+    padding: 10px;
+    width: 450px;
     text-align: center;
-    box-shadow: 0 4px 8px #002366
+    box-shadow: 0 4px 8px #002366;
 }
 
-
-a {
-    color: antiquewhite;
-    font-style: normal;
+    a {
+    color: #002366;
     text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #002366;
+    transition: width 0.3s ease;
 }
 
 a:hover {
-    color: rgb(184, 182, 207);
+    color:rgb(107, 35, 174);
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
 }
 
-.dev a {
-    margin: 0 10px;
-    font-size: 24px;
-    color: rgb(21, 21, 75);
+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(107, 35, 174);
+    transition: width 0.3s ease;
 }
 
+
+
+a:hover::after {
+    width: 100%;
+}
+
+
+
+.top{
+background-color: #002366;
+width:100%;
+height:200px;
+color: white;
+display: flex;
+text-align: center;
+justify-content: center;
+
+
+
+}
+.top h1{
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Tablettes (768px à 1024px) */
+@media screen and (max-width: 1024px) {
+    .dev {
+        width: 350px;
+    }
+
+    .dev img {
+        height: 220px;
+        width: 200px;
+    }
+
+    a {
+        font-size: 18px;
+    }
+}
+
+/* Smartphones (moins de 768px) */
+@media screen and (max-width: 768px) {
+    .devlps {
+        flex-direction: column; /* Les cartes s’empilent */
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .dev {
+        width: 90%; /* Prend presque toute la largeur */
+    }
+
+    .dev img {
+        height: 200px;
+        width: 180px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .top {
+        height: 150px;
+        padding: 10px;
+    }
+
+    .top h1 {
+        font-size: 24px;
+    }
+}
 /*----------------Conducteurs-----------------*/
 .section-container {
     margin-left: 2px;
@@ -931,6 +1037,7 @@ a:hover {
         top: 100px;
     }
 }
+
 
 
 
