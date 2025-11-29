@@ -39,7 +39,7 @@ const toggle = document.getElementById("titleForm");
     });
 
 /*----------Conducteurs-----------*/
- const wrapper = document.querySelector('.cards-wrapper');
+const wrapper = document.querySelector('.cards-wrapper');
 const btnRight = document.getElementById('btn-right');
 const btnLeft = document.getElementById('btn-left');
 
