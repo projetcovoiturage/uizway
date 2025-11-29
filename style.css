@@ -10,7 +10,7 @@ body{
     display: grid;
     height:100vh;
    /* background:linear-gradient(to bottom right, #002366, lightgray);*/
-background-image: url("image/back2.png");
+background-image: url("back2.png");
 background-position: center;
 
 background-repeat: no-repeat;
@@ -97,6 +97,7 @@ background-size: 100% 100%;
 .menu ul li {
     text-align: center;
     padding:1.5vh 5vh;
+   
 }
 
 
@@ -108,7 +109,7 @@ background-size: 100% 100%;
     font-size: 2.9vh;
     font-weight: bolder;
     position: relative;       /* pour pseudo-élément */
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease
 }
 
 /* création d'un soulignement animé */
@@ -124,7 +125,7 @@ background-size: 100% 100%;
 }
 
 .menu ul li a:hover {
-    color: rgba(60,126,255,0.6);
+    color:rgba(60,126,255,0.6);
     transform: translateY(-3px); /* légère montée */
 }
 
@@ -133,6 +134,22 @@ background-size: 100% 100%;
     width: 100%;
     
 }
+/* Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none; /* invisible par défaut */
+    z-index: 998;
+}
+
+.menu-overlay.active {
+    display: block; /* s'affiche quand le menu est actif */
+}
+
 /*-------------------------------------*/
 .icone {
     justify-self:flex-start; 
@@ -173,6 +190,8 @@ nav{
     text-shadow: 2px 2px 6px black;
     margin-left:15vh;
     margin-top:4vh;
+    animation: titleZoom 1.2s ease-out forwards;
+   
 }
 
 .titre h2{
@@ -182,7 +201,6 @@ nav{
     margin-left:0vh;
     position:relative;
     left:175px;
-    animation: titleZoom 1.2s ease-out forwards;
    
 }
 
@@ -275,7 +293,7 @@ nav{
     transition: all 0.3s ease;
     display: inline-block;
     margin-left: 4%;
-     width:200px;
+    width:200px;
 
 }
 
@@ -886,7 +904,24 @@ justify-content: center;
 
 /*----------------media query-------------------*/
 
-/* Tablettes et petits desktops */
+
+/*----------------media query-------------------*/
+@media screen and (max-width: 1024px) {
+    .dev {
+        width: 350px;
+    }
+
+    .dev img {
+        height: 220px;
+        width: 200px;
+    }
+
+    .lien {
+        font-size: 18px;
+    }
+}
+
+/* Smartphones (moins de 768px) */
 @media screen and (max-width: 768px) {
      /* Overlay derrière le menu */
     .menu-overlay {
@@ -985,6 +1020,8 @@ justify-content: center;
         font-size: 24px;
     }
 }
+
+/* Tablettes et petits desktops */
 @media (max-width: 1024px) {
     nav {
         display: grid;
@@ -1042,7 +1079,6 @@ justify-content: center;
     .menu { 
         width: 50%;
          right: -100%; /* menu mobile */ }
-    
     .titre h1 {
          font-size:400%; 
          margin:5px;
@@ -1133,7 +1169,7 @@ body{
         margin: 0;
         padding: 0;
         position:relative;
-        left:-30px;
+        left:-3px;
         top:210px;
     }
 
@@ -1378,31 +1414,6 @@ body{
         bottom:10px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
