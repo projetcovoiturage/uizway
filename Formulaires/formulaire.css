@@ -1,12 +1,12 @@
 :root {
-    --primary-blue: #3c7eff;
-    --primary-blue-hover: #2563e4;
-    --deep-dark: #001f4d;
-    --card-bg: #ffffff;
-    --text-dark: #1a1a1a;
-    --text-light: #f0f0f0;
-    --input-bg: #f7f9fc;
-    --border-light: #e0e6f0;
+    --primary-blue: #3c7eff; /* Bleu vif pour les actions (boutons, liens) */
+    --primary-blue-hover: #2563e4; /* Bleu légèrement plus foncé pour le survol */
+    --deep-dark: #0f1c3a; /* Bleu Marine foncé, utilisé pour le panneau de bienvenue */
+    --card-bg: #ffffff; /* Fond blanc pur de la carte (colonne droite) */
+    --text-dark: #1a1a1a; /* Couleur de texte sombre standard */
+    --text-light: #f0f0f0; /* Texte clair pour les fonds sombres */
+    --input-bg: #f7f9fc; /* Fond très léger pour les champs */
+    --border-light: #e0e6f0; /* Bordure subtile */
     --shadow-subtle: rgba(0, 0, 0, 0.1);
     --shadow-strong: rgba(0, 0, 0, 0.25);
 }
@@ -27,20 +27,20 @@ body {
 
 section {
     width: 92%;
-    max-width: 1100px;
-    min-height: 630px;
+    max-width: 1000px;
+    min-height: 600px;
     display: flex;
     flex-direction: row;
     position: relative;
     border-radius: 32px;
     overflow: hidden;
     background: var(--card-bg);
-    box-shadow: 0 10px 40px var(--shadow-subtle), 0 0 15px var(--shadow-subtle);
+    box-shadow: 0 15px 50px var(--shadow-subtle);
     animation: fadeIn 0.6s ease-out;
     flex: 1;
 }
 
-section, a{
+a{
     text-align: center;
 }
 
@@ -50,24 +50,99 @@ section, a{
 }
 
 section::before {
-    content: "";
-    flex: 1;
-    background: url("login.png") center/cover no-repeat;
-    background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.4);
-    filter: brightness(0.95);
-    min-width: 360px;
+    content: none !important;
 }
+
+
+.welcome-panel {
+    flex: 1;
+    min-width: 380px;
+    background-color: var(--deep-dark);
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: left; 
+    
+    align-items: flex-start;
+    padding: 50px 30px;
+    text-align: left; 
+    color: var(--text-light);
+    position: relative; 
+    overflow: hidden;
+    z-index: 10; 
+}
+
+
+.welcome-panel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 250px;
+    height: 100%;
+    background: var(--card-bg);
+    transform: skewX(-15deg);
+    z-index: 1;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.welcome-panel .logo {
+    width: auto;
+    height: auto;
+    text-align: left; 
+    margin-bottom: 35px; 
+    z-index: 2;
+    filter: brightness(1.5) drop-shadow(0 0 5px rgba(255, 255, 255, 0.4));
+}
+
+.welcome-panel .logo img {
+    width: 140px; 
+    display: block;
+}
+
+.welcome-panel h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: var(--text-light);
+    z-index: 2;
+    margin-left: 0;
+}
+
+.welcome-panel p {
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 2;
+}
+
+.register-btn {
+    background: var(--card-bg);
+    color: var(--deep-dark);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    align-self: flex-start; 
+}
+
+.register-btn:hover {
+    background: #f0f0f0;
+    transform: scale(1.02);
+}
+
+
 
 .logo2 {
-    text-align: center;
-    margin-bottom: 30px;
-    margin-top: -10px;
-}
-
-.logo2 img {
-    width: 120px;
-    filter: drop-shadow(0 6px 10px rgba(0,0,0,0.3));
+    display: none; 
 }
 
 form {
@@ -76,15 +151,13 @@ form {
     background: var(--card-bg);
     display: flex;
     flex-direction: column;
-    z-index: 2;
+    z-index: 10;
+    text-align: left; 
 }
 
+
 label {
-    color: var(--text-dark);
-    font-weight: 600;
-    margin-bottom: 7px;
-    margin-top: 18px;
-    font-size: 0.95rem;
+    display: none;
 }
 
 input, select, textarea {
@@ -96,6 +169,8 @@ input, select, textarea {
     font-size: 1rem;
     color: var(--text-dark);
     transition: all 0.3s ease;
+    text-align: left; 
+    margin-top: 25px; 
 }
 
 input:focus, select:focus, textarea:focus {
@@ -105,13 +180,13 @@ input:focus, select:focus, textarea:focus {
     outline: none;
 }
 
-/* AMÉLIORATION DU STYLE DU INPUT TYPE FILE */
 input[type="file"] {
     padding: 0; 
     border: none;
     background: transparent;
     cursor: pointer;
     font-size: 1rem;
+    text-align: left;
 }
 
 input[type="file"]::file-selector-button {
@@ -133,13 +208,17 @@ input[type="submit"] {
     background: var(--primary-blue);
     color: white;
     font-size: 1.15rem;
+    width: 100%; 
+    
+    margin-top: auto; 
+    
     padding: 16px 0;
     border: none;
     border-radius: 14px;
-    margin-top: 35px;
     box-shadow: 0 8px 20px rgba(60,126,255,0.4);
     cursor: pointer;
     transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    text-align: center;
 }
 
 input[type="submit"]:hover {
@@ -155,6 +234,7 @@ footer {
     font-size: 0.9rem;
 }
 
+
 @media (max-width: 850px) {
     section {
         flex-direction: column;
@@ -162,18 +242,26 @@ footer {
         min-height: auto; 
     }
 
-    section::before {
-        display: none;
+    .welcome-panel {
+        display: none; 
     }
 
     .logo2 {
         position: static;
         margin-top: 15px;
         margin-bottom: 25px;
+        display: block; 
     }
 
     form {
         padding: 40px 30px;
+        flex: 1;
+        text-align: left; 
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 35px;
     }
 }
 
@@ -189,10 +277,6 @@ footer {
         min-height: 48px; 
     }
     
-    label {
-        font-size: 0.9rem;
-    }
-
     footer {
         font-size: 0.8rem; 
     }
