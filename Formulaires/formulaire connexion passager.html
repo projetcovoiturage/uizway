@@ -8,26 +8,26 @@
 </head>
 <body class="form">
     <section>
-    <form method="post">
-    <div class="logo2">
-        <img src="newlogo.png" alt="logo">  
+    <div class="welcome-panel">
+        <div class="logo">
+        <img src="newlogo.png" alt="logo"> 
+        </div> 
+        <h1>Bienvenue !</h1>
+        <p>J'ai pas un compte</p>
+        <a href="Formulaire d’inscription Client.html" class="register-btn">S'inscrire</a>
     </div>
-    <label for="nom">Nom</label>
-    <input type="text" id="nom" name="Nom" maxlength="20" required>
+    <form method="post">
+        <!-- Remplacement des labels par des placeholders clairs -->
+        <input type="text" id="nom" name="Nom" maxlength="20" placeholder="Entrez votre nom">
 
-    <label for="prenom">Prénom</label>
-    <input type="text" id="prenom" name="Prenom" maxlength="20" required>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="Email" placeholder="Entrez votre Email" maxlength="30" required>
+        <input type="text" id="prenom" name="Prenom" maxlength="20" placeholder="Entrez votre prénom" required>
 
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="MotDePasse" placeholder="Votre Mot de passe" maxlength="20" required>
+        <input type="email" id="email" name="Email" placeholder="Entrez votre Email" maxlength="30" required>
 
-            <input type="submit" value="Se connecter">
-        <p>
-            <a href="Formulaire d’inscription Client.html">Pas encore inscrit?</a>
-        </p>
-        </form>
+        <input type="password" id="password" name="MotDePasse" placeholder="Votre Mot de passe" maxlength="20" required>
+
+        <input type="submit" value="Se connecter">
+    </form>
     </section>
 
     <footer>
