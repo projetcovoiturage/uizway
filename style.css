@@ -767,6 +767,7 @@ justify-content: center;
     font-weight: 45px;
     color:#1A2A47;
     text-align: center;
+    margin-top:15px;
 } 
 
 .slider-container {
@@ -1418,6 +1419,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
