@@ -8,35 +8,36 @@
 </head>
 <body class="form">
 <section>
-<form method="post">
-    <div class="logo2">
-        <img src="newlogo.png" alt="logo">  
+    <div class="welcome-panel">
+        <div class="logo">
+        <img src="newlogo.png" alt="logo"> 
+        </div> 
+        <h1>Bienvenue !</h1>
+        <p>Déja j'avais un compte</p>
+        <a href="formulaire connexion passager.html" class="register-btn">se connecter</a>
     </div>
-    <label for="nom">Nom</label>
-    <input type="text" id="nom" name="Nom" maxlength="20" required>
+<form method="post">
+    <!-- Le logo2 est masqué en mode desktop mais utile pour le mobile -->
+    <div class="logo2">
+        <img src="newlogo.png" alt="logo"> 
+    </div>
+    
+    <!-- Remplacement des labels par des placeholders -->
+    <input type="text" id="nom" name="Nom" maxlength="20" placeholder="Nom complet" required>
 
-    <label for="prenom">Prénom</label>
-    <input type="text" id="prenom" name="Prenom" maxlength="20" required>
+    <input type="text" id="prenom" name="Prenom" maxlength="20" placeholder="Prénom" required>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="Email" maxlength="30" required>
+    <input type="email" id="email" name="Email" maxlength="30" placeholder="Adresse Email" required>
 
-    <label for="tel">Téléphone</label>
-    <input type="tel" id="tel" name="Telephone" maxlength="15" required>
+    <input type="tel" id="tel" name="Telephone" maxlength="15" placeholder="Numéro de téléphone" required>
 
-    <label for="password">Mot de passe</label>
-    <input type="password" id="password" name="Password" maxlength="20" required>
+    <input type="password" id="password" name="Password" maxlength="20" placeholder="Mot de passe" required>
 
-    <label for="confirm">Confirmer mot de passe</label>
-    <input type="password" id="confirm" name="PasswordConfirm" maxlength="20" required>
+    <input type="password" id="confirm" name="PasswordConfirm" maxlength="20" placeholder="Confirmer mot de passe" required>
 
-    <label for="ville">Ville</label>
-    <input type="text" id="ville" name="Ville" maxlength="20">
+
 
     <input type="submit" value="Créer un compte">
-    <p>
-        <a href="formulaire connexion passager.html">Déja inscrit</a>
-    </p>
 </form>
 </section>
 <footer>
