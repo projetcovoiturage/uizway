@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Formulaire de Connexion</title>
+</head>
+<body class="form">
+    <section>
+    <div class="welcome-panel">
+        <div class="logo">
+        <img src="newlogo.png" alt="logo"> 
+        </div> 
+        <h1>Bienvenue !</h1>
+        <p>J'ai pas un compte</p>
+        <a href="Formulaire d’inscription Client.html" class="register-btn">S'inscrire</a>
+    </div>
+    <form method="post">
+        <!-- Remplacement des labels par des placeholders clairs -->
+        <input type="text" id="nom" name="Nom" maxlength="20" placeholder="Entrez votre nom">
+
+        <input type="text" id="prenom" name="Prenom" maxlength="20" placeholder="Entrez votre prénom" required>
+
+        <input type="email" id="email" name="Email" placeholder="Entrez votre Email" maxlength="30" required>
+
+        <input type="password" id="password" name="MotDePasse" placeholder="Votre Mot de passe" maxlength="20" required>
+
+        <input type="submit" value="Se connecter">
+    </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 UIZ Way</p>
+    </footer> 
+    <script src="inscription_passager.js"></script>
+</body>
+</html>

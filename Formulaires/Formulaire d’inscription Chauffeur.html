@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Nouveau étudiant conducteur</title>
+</head>
+<body class="form">
+<section>
+    <div class="welcome-panel">
+        <div class="logo">
+        <img src="newlogo.png" alt="logo"> 
+        </div> 
+        <h1>Bienvenue !</h1>
+        <p>Déja j'avais un compte</p>
+        <a href="Formulaire de Connexion conducteur.html" class="register-btn">se connecter</a>
+    </div>
+<form method="post" enctype="multipart/form-data">
+    <!-- Le logo2 est masqué en mode desktop mais utile pour le mobile -->
+
+    
+    <h3>Informations personnelles et de contact</h3>
+
+    <input type="text" id="nom" name="Nom" maxlength="20" placeholder="Nom complet" required>
+
+    <input type="text" id="prenom" name="Prenom" maxlength="20" placeholder="Prénom" required>
+
+    <input type="email" id="email" name="Email" maxlength="30" placeholder="Adresse Email" required>
+    
+    <input type="password" id="password" name="MotDePasse" maxlength="20" placeholder="Mot de passe" required>
+
+
+    <input type="submit" value="Envoyer">
+
+</form>
+</section>
+
+<footer>
+    <p>&copy; 2025 UIZ Way</p>
+</footer>
+<script src="inscription_conducteur.js"></script>
+</body>
+</html>

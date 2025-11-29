@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Demande de course</title>
+</head>
+<body class="form">
+<section>
+    <div class="welcome-panel">
+        <div class="logo">
+        <img src="newlogo.png" alt="logo"> 
+        </div> 
+        <h1>Bienvenue !</h1>
+        <!-- Suppression du paragraphe et du lien "J'ai pas un compte/S'inscrire" car non pertinent pour la demande de course -->
+    </div>
+<form method="post">
+    <!-- Remplacement des labels par des placeholders -->
+    <input type="text" id="depart" name="Depart" maxlength="40" placeholder="Point de départ" required>
+
+    <input type="text" id="destination" name="Destination" maxlength="40" placeholder="Destination" required>
+
+    <input type="text" id="typeVoiture" name="TypeVoiture" maxlength="20" placeholder="Type de voiture souhaité">
+
+    <input type="number" id="prix" name="Prix" min="0" max="1000" placeholder="Prix proposé (€)">
+
+    <textarea id="commentaire" name="Commentaire" rows="4" placeholder="Commentaire optionnel (ex: heure de départ, bagages...)"></textarea>
+
+    <input type="submit" value="Envoyer la demande">
+</form>
+</section>
+
+<footer><p>&copy; 2025 UIZ Way</p></footer>
+</body>
+</html>

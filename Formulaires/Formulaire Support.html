@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Support</title>
+</head>
+<body class="form">
+    <section>
+    <div class="welcome-panel">
+        <div class="logo">
+        <img src="newlogo.png" alt="logo"> 
+        </div> 
+        <h1>Bienvenue !</h1>
+        <!-- Pas de lien d'inscription pertinent pour la page de support -->
+    </div>
+    
+    <form method="post" enctype="multipart/form-data">
+        <h3 class="form-title">Contactez le Support</h3>
+        
+        <!-- Remplacement des labels par des placeholders -->
+        <input type="text" id="nom" name="Nom" maxlength="20" placeholder="Nom complet" required>
+
+        <input type="email" id="email" name="Email" maxlength="30" placeholder="Adresse Email" required>
+
+        <input type="number" id="idCourse" name="CourseID" placeholder="Numéro de course (Optionnel)">
+
+        <!-- Le select ne supporte pas placeholder. On utilise la première option comme indicateur. -->
+        <select id="typeP" name="TypeProbleme" required>
+            <option value="" disabled selected>Sélectionner le type de problème</option>
+            <option>Retard chauffeur</option>
+            <option>Problème de paiement</option>
+            <option>Problème de sécurité</option>
+            <option>Objet perdu</option>
+            <option>Autre</option>
+        </select>
+
+        <textarea id="description" name="Description" rows="4" placeholder="Description détaillée du problème" required></textarea>
+
+
+
+        <input type="submit" value="Envoyer">
+    </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 UIZ Way</p>
+    </footer>
+</body>
+</html>
