@@ -572,7 +572,7 @@ form {
     box-shadow: 0 4px 8px #002366;
 }
 
-    a {
+   .lien {
     color: #002366;
     text-decoration: none;
     position: relative;
@@ -581,39 +581,29 @@ form {
     font-size: 20px;
 }
 
-a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0%;
-    height: 2px;
-    background: #002366;
-    transition: width 0.3s ease;
-}
 
-a:hover {
-    color:rgb(107, 35, 174);
+.lien:hover {
+    color:rgb(60,126,255,0.6);
     text-decoration: none;
     position: relative;
     padding-bottom: 2px;
     transition: color 0.3s ease;
 }
 
-a::after {
+.lien::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     width: 0%;
     height: 2px;
-    background: rgb(107, 35, 174);
+    background: rgb(60,126,255,0.6);
     transition: width 0.3s ease;
 }
 
 
 
-a:hover::after {
+.lien:hover::after {
     width: 100%;
 }
 
@@ -648,7 +638,7 @@ justify-content: center;
         width: 200px;
     }
 
-    a {
+    .lien {
         font-size: 18px;
     }
 }
@@ -670,7 +660,7 @@ justify-content: center;
         width: 180px;
     }
 
-    a {
+    .lien {
         font-size: 16px;
     }
 
@@ -1078,6 +1068,7 @@ justify-content: center;
       
     }
 }
+
 
 
 
