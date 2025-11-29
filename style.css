@@ -891,6 +891,104 @@ justify-content: center;
 /*----------------media query-------------------*/
 
 /* Tablettes et petits desktops */
+@media screen and (max-width: 768px) {
+     /* Overlay derrière le menu */
+    .menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(211, 211, 211, 0.5); /* gris semi-transparent */
+        display: none;
+        z-index: 998;
+    }
+    .menu-overlay.active {
+        display: block;
+    }
+
+    /* Menu glissant depuis la droite */
+    .menu {
+        position: fixed;
+        top: -35px;
+        right: -100%; /* caché initialement */
+        width: 50%;   /* moitié écran */
+        height: 100%;
+        background-color: white; /* background du menu */
+        display: flex;
+        flex-direction: column;
+        transition: right 0.4s ease;
+        z-index: 999;
+       
+    }
+    .menu.active {
+        right: 0; /* menu visible */
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li a {
+        color: #1A2A47; /* bleu foncé */
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu ul li a:hover {
+        color:rgba(60,126,255,0.6); /* effet hover */
+        transform: scale(1.05);
+    }
+
+    /* Hamburger toujours visible */
+    .icone {
+        position: fixed;
+        top:-20px ;
+        right: 1rem;
+        z-index: 1000;/* au-dessus du menu */
+        cursor: pointer;
+        color:gray;
+    }
+    .icone:hover{
+        color:rgba(60,126,255,0.6);
+    }
+    .devlps {
+        flex-direction: column; /* Les cartes s’empilent */
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .dev {
+        width: 90%; /* Prend presque toute la largeur */
+    }
+
+    .dev img {
+        height: 200px;
+        width: 180px;
+    }
+
+    .lien {
+        font-size: 16px;
+    }
+
+    .top {
+        height: 150px;
+        padding: 10px;
+    }
+
+    .top h1 {
+        font-size: 24px;
+    }
+}
 @media (max-width: 1024px) {
     nav {
         display: grid;
