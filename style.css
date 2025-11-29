@@ -402,6 +402,7 @@ nav{
     margin-bottom: 20px;
     color: #1A2A47;
     text-align: center;
+    font-weight:45px;
 }
 
 
@@ -1417,5 +1418,6 @@ body{
         bottom:10px;
     }
 }
+
 
 
