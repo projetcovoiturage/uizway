@@ -762,7 +762,11 @@ justify-content: center;
     margin-right: 2px;
 }
 
-
+.section-container h1{
+    font-weight: 45px;
+    color:#1A2A47;
+    text-align: center;
+} 
 
 .slider-container {
     display: flex;
@@ -1413,3 +1417,4 @@ body{
         bottom:10px;
     }
 }
+
