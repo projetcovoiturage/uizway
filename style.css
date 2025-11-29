@@ -10,7 +10,7 @@ body{
     display: grid;
     height:100vh;
    /* background:linear-gradient(to bottom right, #002366, lightgray);*/
-background-image: url("image/back2.png");
+background-image: url("back2.png");
 background-position: center;
 
 background-repeat: no-repeat;
@@ -61,7 +61,7 @@ background-size: 100% 100%;
    
 }
 #header.scrolled {
-    background: #002366;  
+    background: #1A2A47;  
 }
 
 .logo{
@@ -117,12 +117,12 @@ background-size: 100% 100%;
     height: 2px;
     left: 0;
     bottom: -5px;
-    background-color:#228B22;
+    background-color:rgba(60,126,255,0.6);
     transition: width 0.3s ease;
 }
 
 .menu ul li a:hover {
-    color: #228B22;
+    color: rgba(60,126,255,0.6);
     transform: translateY(-3px); /* légère montée */
 }
 
@@ -140,7 +140,7 @@ background-size: 100% 100%;
 
 }
 .icone:hover{
-    color:#228B22;
+    color:rgba(60,126,255,0.6);
 }
 nav{
     height:75vh;     
@@ -163,7 +163,8 @@ nav{
     top:20vh;
 
 }
-.titre { grid-area: titre; }
+.titre { grid-area: titre;
+ }
 .titre h1{
     color:lightgray;
     font-size:600%;
@@ -171,6 +172,7 @@ nav{
     margin-left:15vh;
     margin-top:4vh;
 }
+
 .titre h2{
     color:lightgray;
     font-size:200%;
@@ -179,6 +181,7 @@ nav{
     position:relative;
     left:175px;
 }
+
 .titre h2::before {
     content: ""; /* pas de texte, juste la ligne */
     position: absolute;
@@ -188,6 +191,8 @@ nav{
     width: 12vh; /* longueur de la ligne */
     border-bottom: 3px solid lightgray; /* ligne longue et bleue */
 }
+
+
 .text { 
     grid-area: text;
    
@@ -208,7 +213,7 @@ nav{
  }
 .bouton a{
     text-decoration: none;
-    color:#002366;
+    color:#1A2A47;
 }
 .bouton a:hover{
     color:lightgray;
@@ -218,7 +223,7 @@ nav{
 .btn1 {
     position: relative;
     background-color: white;
-    color: #002366;
+    color: #1A2A47;
     font-weight: bold;
     font-size: 1rem;
     padding: 10px 16px;
@@ -228,18 +233,18 @@ nav{
     cursor: pointer;
     transition: all 0.3s ease;
     display: inline-block;
-     width:200px;
+    width:200px;
 }
 
 /* Si un <a> est dans le bouton */
 .btn1 a {
-    color: #002366;
+    color: #1A2A47;
     text-decoration: none;
     display: inline-block;
 }
 
 .btn1:hover {
-    background-color: rgb(228, 3, 3);
+    background-color: rgba(60,126,255,0.6);
     transform: scale(1.05);
      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1);
     border-color:white
@@ -254,7 +259,7 @@ nav{
 .btn2 {
     position: relative;
     background-color: white;
-    color: #002366;
+    color: #1A2A47;
     font-weight: bold;
     font-size: 1rem;
     padding: 10px 25px;
@@ -266,17 +271,18 @@ nav{
     display: inline-block;
     margin-left: 4%;
      width:200px;
+
 }
 
 /* Pour le texte contenu dans le bouton */
 .btn2 a {
-    color: #002366;
+    color: #1A2A47;
     text-decoration: none;
     display: inline-block;
 }
 
 .btn2:hover {
-    background-color: rgb(228, 3, 3);
+    background-color: rgba(60,126,255,0.6);
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1);
     border-color:white
@@ -295,6 +301,7 @@ nav{
     transform: scaleX(-1); 
     right:-15vh
 }
+
 .aproposdenous img{
     width:200px;
     height:300px;
@@ -1097,6 +1104,7 @@ justify-content: center;
         margin:5px;
          left:-10px;
     }
+
 
 
 
