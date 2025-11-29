@@ -526,7 +526,7 @@ form {
 
 .equipe {
     background-color: white;
-    color: #002366;
+    color: #1A2A47;
     margin: 0px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -564,9 +564,10 @@ form {
 .dev img {
     height: 250px;
     width: 220px;
-    border:  groove white;
+    border: 2px groove white;
     border-radius: 60%;
     object-fit: cover;
+    border-color: #002366;
 }
 
 .dev {
@@ -575,11 +576,12 @@ form {
     padding: 10px;
     width: 450px;
     text-align: center;
-    box-shadow: 0 4px 8px #002366;
+    box-shadow: 0 4px 8px #1A2A47;
 }
 
-  .lien {
-    color: #002366;
+
+.lien {
+    color: #1A2A47;
     text-decoration: none;
     position: relative;
     padding-bottom: 2px;
@@ -616,7 +618,7 @@ form {
 
 
 .top{
-background-color: #002366;
+background-color:#1A2A47;
 width:100%;
 height:200px;
 color: white;
@@ -632,60 +634,7 @@ justify-content: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Logo apparition */
-@keyframes logoSlide {
-    0% {
-        transform: translateX(-40px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-/* Image slide */
-@keyframes imageSlide {
-    0% {
-        transform: translateX(60px) scaleX(-1);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0) scaleX(-1);
-        opacity: 1;
-    }
-}
 
-@keyframes titleZoom {
-    from { opacity: 0; transform: scale(0.85); }
-    to   { opacity: 1; transform: scale(1); }
-}
-/* Logo apparition */
-@keyframes logoSlide {
-    0% {
-        transform: translateX(-40px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-/* Image slide */
-@keyframes imageSlide {
-    0% {
-        transform: translateX(60px) scaleX(-1);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0) scaleX(-1);
-        opacity: 1;
-    }
-}
-
-@keyframes titleZoom {
-    from { opacity: 0; transform: scale(0.85); }
-    to   { opacity: 1; transform: scale(1); }
-}
 /* Tablettes (768px à 1024px) */
 @media screen and (max-width: 1024px) {
     .dev {
@@ -697,14 +646,13 @@ justify-content: center;
         width: 200px;
     }
 
-    .lien {
+    a {
         font-size: 18px;
     }
 }
 
 /* Smartphones (moins de 768px) */
 @media screen and (max-width: 768px) {
- 
     .devlps {
         flex-direction: column; /* Les cartes s’empilent */
         gap: 20px;
@@ -720,7 +668,7 @@ justify-content: center;
         width: 180px;
     }
 
-    .lien {
+    a {
         font-size: 16px;
     }
 
@@ -733,6 +681,63 @@ justify-content: center;
         font-size: 24px;
     }
 }
+
+
+/* Logo apparition */
+@keyframes logoSlide {
+    0% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Image slide */
+@keyframes imageSlide {
+    0% {
+        transform: translateX(60px) scaleX(-1);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scaleX(-1);
+        opacity: 1;
+    }
+}
+
+@keyframes titleZoom {
+    from { opacity: 0; transform: scale(0.85); }
+    to   { opacity: 1; transform: scale(1); }
+}
+/* Logo apparition */
+@keyframes logoSlide {
+    0% {
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+/* Image slide */
+@keyframes imageSlide {
+    0% {
+        transform: translateX(60px) scaleX(-1);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0) scaleX(-1);
+        opacity: 1;
+    }
+}
+
+@keyframes titleZoom {
+    from { opacity: 0; transform: scale(0.85); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
 /*----------------Conducteurs-----------------*/
 .section-container {
     margin-left: 2px;
@@ -1184,6 +1189,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
