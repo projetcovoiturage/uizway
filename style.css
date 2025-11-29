@@ -303,11 +303,11 @@ nav{
     margin-left:10vh;
     position:relative;
     top:-7vh ;
-    transform: scaleX(-1); 
-    right:-15vh;
-    animation: logoSlide 1.2s ease-out forwards;
-}
 
+    height:500px;
+     animation: slideRotate 1.5s ease-out forwards;
+  
+}
 .aproposdenous img{
     width:200px;
     height:300px;
@@ -722,13 +722,17 @@ justify-content: center;
     }
 }
 /* Image slide */
-@keyframes imageSlide {
+@keyframes slideRotate {
     0% {
-        transform: translateX(60px) scaleX(-1);
+        transform: rotate(-10deg) translateY(50px);
         opacity: 0;
     }
+    50% {
+        transform: rotate(-5deg) translateY(25px);
+        opacity: 0.5;
+    }
     100% {
-        transform: translateX(0) scaleX(-1);
+        transform: rotate(0deg) translateY(0);
         opacity: 1;
     }
 }
@@ -897,42 +901,6 @@ justify-content: center;
     }
 
     .titre h1 {
-        font-size: 2.5rem;
-        margin-left: 5vh;
-        margin-top: 5vh;
-    }
-
-    .titre h2 {
-        font-size: 1.2rem;
-        margin-left: 5vh;
-    }
-
-    .text p {
-        font-size: 1rem;
-        margin-left: 5vh;
-    }
-
-    .bouton {
-        margin-left: 5vh;
-    }
-
-    .btn1, .btn2 {
-        font-size: 0.9rem;
-        padding: 8px 14px;
-    }
-}
-
-/* Tablettes et petits desktops */
-@media (max-width: 1024px) {
-    nav {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        gap: 1.5rem;
-        top: 15vh;
-    }
-
-    .titre h1 {
         font-size:450%;
         margin-left: 5vh;
         margin-top: 5vh;
@@ -1070,7 +1038,7 @@ body{
         margin: 0;
         padding: 0;
         position:relative;
-        left:-113px;
+        left:-30px;
         top:210px;
     }
 
@@ -1215,6 +1183,106 @@ body{
 
 
 
+
+/* Téléphones ≤ 375px */
+@media screen and (max-width: 325px) {
+body{
+    overflow-x: hidden;
+}
+    /* Le conteneur principal */
+    .logo img{
+        position:relative;
+        left:-50px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin-top: 10vh;
+        width: 100%;
+    }
+
+    /* TITRE H1 */
+    .titre h1 {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0;
+        position:relative;
+        top:-80px;
+        left:-20px;
+    }
+     .titre h2::before {
+        display: none;
+    }
+
+    /* IMAGE */
+    .vide img {
+        width: 100%;           /* occupe toute la largeur */
+        max-width: 320px;      /* ne dépasse pas */
+        height:320px;
+        transform: scaleX(-1); /* ton effet */
+        margin: 0 auto;
+        position:relative;
+        top:-345px;
+        left:-20px;
+    }
+
+
+    /* TITRE H2 */
+    .titre h2 {
+        font-size: 1.2rem;
+        margin-right:0;
+        padding: 0;
+        position:relative;
+        left:-10px;
+        top:210px;
+    }
+
+    /* TEXTE */
+    .text p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        position:relative;
+        top:190px;
+        left:-5px;
+    }
+
+    /* BOUTONS EN COLONNE */
+    .bouton {
+        display: flex;
+        flex-direction: column;
+      
+        width: 90%;
+        margin: 0 auto 20px auto;
+        position:relative;
+        top:220px;
+        left:-5px;
+        
+       
+    }
+
+    .btn1 {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1rem;
+        position:relative;
+        margin-top:5px;
+        position:relative;
+        right:-10px;
+        
+    }
+    .btn2{
+        width: 100%;
+        padding: 10px 0;
+        font-size: 1rem;
+        position:relative;
+        bottom:10px;
+    }
+}
 
 
 
