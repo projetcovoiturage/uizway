@@ -904,7 +904,6 @@ justify-content: center;
 
 /*----------------media query-------------------*/
 
-
 /*----------------media query-------------------*/
 @media screen and (max-width: 1024px) {
     .dev {
@@ -1414,8 +1413,3 @@ body{
         bottom:10px;
     }
 }
-
-
-
-
-
