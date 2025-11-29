@@ -326,7 +326,8 @@ nav{
     text-align: center;
     color: #002366;
     margin-bottom: 40px;
-    font-size: 30px;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .aproposdenous {
@@ -1104,6 +1105,7 @@ justify-content: center;
         margin:5px;
          left:-10px;
     }
+
 
 
 
