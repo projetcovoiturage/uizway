@@ -1,17 +1,16 @@
 :root {
-    --primary-blue: #3c7eff;
+    --primary-blue: #3c7eff; /* Bleu vif pour les actions */
     --primary-blue-hover: #2b63d6;
-    --header-bg: #002366; 
-    --text-dark: #222222; 
+    --header-bg: #002366; /* Bleu très foncé/marine pour la barre et le fond principal */
+    --text-dark: #f0f0f0; /* Texte clair pour contraster avec le fond sombre */
     --text-light: #ffffff;
 }
-
 body {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #002366, lightgray);
+    background: var(--header-bg); 
     background-attachment: fixed; 
 }
 
@@ -19,7 +18,7 @@ header {
     width: 100%;
     padding: 20px 40px;
     background: var(--header-bg); 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Ombre plus marquée sur fond sombre */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,6 +67,7 @@ header {
     padding: 80px 20px;
     min-height: calc(100vh - 80px); 
     text-align: center;
+    /* Texte en clair pour contraste avec le fond sombre */
     color: var(--text-dark); 
 }
 
@@ -75,15 +75,15 @@ header {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 20px;
-    color: var(--text-dark); /* Rendre le titre sombre */
-    text-shadow: none; /* Enlever l'ombre noire qui était sur fond sombre */
+    color: var(--text-light); /* Titre en clair */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 }
 
-#nomPassager {
+#nomConducteur {
     color: var(--primary-blue);
 }
 
-.photo {
+#photoConducteur {
     width: 150px;
     height: 150px;
     border-radius: 50%;
