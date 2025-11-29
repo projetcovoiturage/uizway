@@ -956,7 +956,7 @@ justify-content: center;
         height: 100%;
         background-color: rgba(0,0,0,0.5); 
         display: none;
-        z-index: 998;
+        z-index: 1001;
     }
 
     .menu-overlay.active {
@@ -1313,6 +1313,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
