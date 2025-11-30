@@ -238,14 +238,20 @@ footer {
     
     body {
         padding: 40px 20px;
-        justify-content: center;
+        /* Correction: Retour à centré pour le desktop, mais retire la hauteur fixe pour permettre le défilement */
+        justify-content: center; 
+        min-height: 100vh;
     }
 
     section {
         width: 92%;
         max-width: 1000px;
-        min-height: 600px;
+        /* Correction: Retire le min-height fixe pour le formulaire long */
+        min-height: auto; 
         flex-direction: row;
+        /* Correction: Ajout d'une marge auto pour centrer la section verticalement dans le body */
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     .logo2 {
@@ -277,6 +283,7 @@ footer {
         box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
     }
     
+    /* Alignement du contenu dans le panneau de bienvenue */
     .welcome-panel .logo,
     .welcome-panel h1,
     .welcome-panel p,
