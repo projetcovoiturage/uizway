@@ -196,7 +196,7 @@ nav{
 
 .titre h2{
     color:lightgray;
-    font-size:45px;
+    font-size:200%;
    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     margin-left:0vh;
     position:relative;
@@ -403,6 +403,9 @@ nav{
     color: #1A2A47;
     text-align: center;
     font-weight:45px;
+}
+.Titre h2{
+    font-size:45px;
 }
 
 
@@ -768,6 +771,7 @@ justify-content: center;
     color:#1A2A47;
     text-align: center;
     margin-top:15px;
+    font-size:45px;
 } 
 
 .slider-container {
@@ -1419,6 +1423,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
