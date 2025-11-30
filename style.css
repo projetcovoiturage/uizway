@@ -476,23 +476,24 @@ form {
 
 }
 .champs_commentaire button {
-    margin-top: 10px;
-    padding: 5px;
-    margin-right:35%;
-    margin-left: 35%;
-    background: lightgray;
-    color: white;
-    border: 2px solid #1A2A47;
+   margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #1A2A47;
+    border: 2px solid lightgray;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
 }
 
 .champs_commentaire button:hover {
-     color: lightgrey;
-    background-color:#1A2A47;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    transform: scale(1.05);   
+     cursor: pointer;
+    border-color: #eee;
+    color:white;
+    background-color: rgba(60,126,255,0.6);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1);
+    
 }
 
 
@@ -1454,6 +1455,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
