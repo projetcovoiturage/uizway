@@ -490,8 +490,8 @@ form {
     border-color: #eee;
     color:white;
     background-color: rgba(60,126,255,0.6);
-    transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
     
 }
 
@@ -1454,6 +1454,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
