@@ -1252,6 +1252,8 @@ body{
     }
      .titre h2::before {
         display: none;
+         margin:3px;
+         padding:2px;
     }
 
     /* IMAGE */
@@ -1307,7 +1309,7 @@ body{
         padding: 10px 0;
         font-size: 1rem;
         position:relative;
-        margin-top:5px;
+        margin-top:10px;
         position:relative;
         right:-10px;
         
@@ -1318,6 +1320,7 @@ body{
         font-size: 1rem;
         position:relative;
         bottom:10px;
+        margin-top:10px;
     }
 }
 
@@ -1355,6 +1358,8 @@ body{
     }
      .titre h2::before {
         display: none;
+         margin:3px;
+         padding:2px;
     }
 
     /* IMAGE */
@@ -1387,7 +1392,7 @@ body{
         font-size: 0.9rem;
         line-height: 1.4;
         position:relative;
-        top:190px;
+        top:200px;
         left:-5px;
     }
 
@@ -1413,6 +1418,7 @@ body{
         margin-top:5px;
         position:relative;
         right:-10px;
+        margin-top:10px;
         
     }
     .btn2{
@@ -1421,8 +1427,10 @@ body{
         font-size: 1rem;
         position:relative;
         bottom:10px;
+        margin-top:10px;
     }
 }
+
 
 
 
