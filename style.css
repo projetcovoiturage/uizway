@@ -734,34 +734,12 @@ justify-content: center;
     to   { opacity: 1; transform: scale(1); }
 }
 /* Logo apparition */
-@keyframes logoSlide {
-    0% {
-        transform: translateX(-40px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
+
 /* Image slide */
-@keyframes slideRotate {
-    0% {
-        transform: rotate(-10deg) translateY(50px);
-        opacity: 0;
-    }
-    50% {
-        transform: rotate(-5deg) translateY(25px);
-        opacity: 0.5;
-    }
-    100% {
-        transform: rotate(0deg) translateY(0);
-        opacity: 1;
-    }
-}
-@keyframes titleZoom {
-    from { opacity: 0; transform: scale(0.85); }
-    to   { opacity: 1; transform: scale(1); }
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-5deg); }
+  50%      { transform: rotate(5deg); }
 }
 
 /*----------------Conducteurs-----------------*/
@@ -1436,6 +1414,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
