@@ -1136,6 +1136,9 @@ body{
         position:relative;
         left:-50px;
     }
+    .icone{
+        margin-right:5px;
+    }
     nav {
         display: flex;
         flex-direction: column;
@@ -1337,6 +1340,9 @@ body{
         position:relative;
         left:-50px;
     }
+    .icone{
+        margin-right:5px;
+    }
     nav {
         display: flex;
         flex-direction: column;
@@ -1426,6 +1432,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
