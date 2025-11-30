@@ -235,13 +235,13 @@ footer {
 
 @media (max-width: 850px) {
   section {
-    flex-direction: column;      /* Welcome au-dessus, form en dessous */
-    height: auto;                /* Laisse la hauteur s’adapter */
+    flex-direction: column;
+    height: auto;
     min-height: auto;
   }
 
   .welcome-panel {
-    min-width: 100%;             /* Prend toute la largeur */
+    min-width: 100%;
     padding: 40px 20px;
   }
 
@@ -249,10 +249,19 @@ footer {
     padding: 30px 20px;
   }
 
+  /* Ici : marge gauche à 0 pour tous les champs */
+  input,
+  select,
+  textarea {
+    margin-left: 0;
+  }
+
   .welcome-panel::after {
-    display: none;               /* Optionnel : enlever la vague qui dépasse */
+    display: none;
   }
 }
+
+
 
 
 
