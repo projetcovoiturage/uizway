@@ -1240,6 +1240,9 @@ body{
         margin-top: 10vh;
         width: 100%;
     }
+    .icone{
+        margin-right:5px;
+    }
 
     /* TITRE H1 */
     .titre h1 {
@@ -1423,6 +1426,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
