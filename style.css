@@ -510,8 +510,8 @@ form {
     border: 1.5px solid;
     border-radius: 25px;
     margin-bottom: 15px;
-    margin-right: 40%;
-    margin-left: 40%;
+    margin-right: 35%;
+    margin-left: 35%;
     margin-top: 15px;
     height:20px;
     padding:8px;
@@ -1449,6 +1449,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
