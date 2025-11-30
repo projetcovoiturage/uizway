@@ -15,7 +15,16 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.classList.remove('active');
     });
 });
+//background header 
+window.addEventListener("scroll", function () {
+    const header = document.getElementById("header");
 
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
 /*----------Commentaire------------*/
 const toggle = document.getElementById("titleForm");
     const form = document.getElementById("commentForm");
@@ -61,3 +70,4 @@ document.querySelectorAll(".contact-conducteur").forEach(button => {
         card.classList.toggle("affiche-contact");
     });
 });
+
