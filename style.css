@@ -516,7 +516,11 @@ nav{
     margin-right: 40%;
     margin-left: 40%;
     margin-top: 15px;
-
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(12px, 3vw, 16px);
+    box-sizing: border-box;
 }
 
 #titleForm:hover {
@@ -1456,6 +1460,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
