@@ -234,55 +234,99 @@ footer {
     font-size: 0.9rem;
 }
 
-
-@media (max-width: 850px) {
-    section {
-        flex-direction: column;
-        max-width: 95%;
-        min-height: auto; 
+@media (min-width: 851px) {
+    
+    body {
+        padding: 40px 20px;
+        justify-content: center;
     }
 
-    .welcome-panel {
+    section {
+        width: 92%;
+        max-width: 1000px;
+        min-height: 600px;
+        flex-direction: row;
+    }
+
+    /* Le logo2 est masqué sur desktop */
+    .logo2 {
         display: none; 
     }
 
-    .logo2 {
-        position: static;
-        margin-top: 15px;
-        margin-bottom: 25px;
-        display: block; 
+    /* Active le panneau de bienvenue (colonne gauche bi-colonne) */
+    .welcome-panel {
+        display: flex; 
+        flex: 1;
+        min-width: 380px;
+        padding: 50px 30px;
+        justify-content: space-between; 
+        align-items: flex-start;
+        position: relative; /* Rétablit les positions pour ::after */
+    }
+    
+    /* Rétablit l'effet de vague sur desktop */
+    .welcome-panel::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -100px;
+        width: 250px;
+        height: 100%;
+        background: var(--card-bg);
+        transform: skewX(-15deg);
+        z-index: 1;
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Rétablit l'alignement vertical du contenu dans le panneau de bienvenue */
+    .welcome-panel .logo,
+    .welcome-panel h1,
+    .welcome-panel p,
+    .register-btn {
+        align-self: flex-start;
+        margin-left: 0; 
+    }
+    
+    .welcome-panel .logo {
+        margin-top: 0;
+        margin-bottom: auto;
+    }
+    
+    .welcome-panel h1 {
+        margin-top: auto; 
+    }
+    
+    .welcome-panel p {
+        margin-bottom: 30px; 
+    }
+    
+    .register-btn {
+        margin-top: auto; 
     }
 
+
     form {
-        padding: 40px 30px;
-        flex: 1;
-        text-align: left; 
+        flex: 1.1;
+        padding: 50px 45px;
+        margin-top: 0; 
+        justify-content: flex-start;
     }
     
     input[type="submit"] {
+        margin-top: auto; 
         width: 100%;
-        margin-top: 35px;
     }
-}
-
-@media (max-width: 450px) {
-    input, select, textarea {
-        font-size: 0.9rem;
-        padding: 12px 14px; 
+    
+    input:not(input[type="submit"]):not(input[type="file"]):not(input[type="date"]), select, textarea {
+        margin-top: 25px;
     }
 
-    input[type="submit"] {
-        padding: 14px;
-        font-size: 1rem;
-        min-height: 48px; 
+    form h3 {
+        margin-top: 40px;
+        font-size: 1.25rem;
     }
     
     footer {
-        font-size: 0.8rem; 
-    }
-    
-    input[type="file"]::file-selector-button {
-        padding: 8px 12px;
-        font-size: 0.9rem;
+        align-self: center; 
     }
 }
