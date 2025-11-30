@@ -478,11 +478,10 @@ form {
 .champs_commentaire button {
    margin-top: 10px;
     padding: 10px 20px;
-    background-color: white;
+    background-color: #eee;
     color: #1A2A47;
     border: 2px solid lightgray;
     border-radius: 8px;
-    cursor: pointer;
     font-weight: bold;
 }
 
@@ -1455,6 +1454,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
