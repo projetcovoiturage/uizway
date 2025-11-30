@@ -12,17 +12,16 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background: var(--deep-dark); 
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px 10px;
+  background: var(--deep-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   /* important: pas centré */
+  align-items: center;
+}
 }
 
 section {
@@ -234,105 +233,26 @@ footer {
     font-size: 0.9rem;
 }
 
-@media (min-width: 350px) {
-    
-    body {
-        padding: 40px 20px;
-        /* Correction: Retour à centré pour le desktop, mais retire la hauteur fixe pour permettre le défilement */
-        justify-content: center; 
-        min-height: 100vh;
-    }
+@media (max-width: 850px) {
+  section {
+    flex-direction: column;      /* Welcome au-dessus, form en dessous */
+    height: auto;                /* Laisse la hauteur s’adapter */
+    min-height: auto;
+  }
 
-    section {
-        width: 92%;
-        max-width: 1000px;
-        /* Correction: Retire le min-height fixe pour le formulaire long */
-        min-height: auto; 
-        flex-direction: row;
-        /* Correction: Ajout d'une marge auto pour centrer la section verticalement dans le body */
-        margin-top: auto;
-        margin-bottom: auto;
-    }
+  .welcome-panel {
+    min-width: 100%;             /* Prend toute la largeur */
+    padding: 40px 20px;
+  }
 
-    .logo2 {
-        display: none; 
-    }
+  form {
+    padding: 30px 20px;
+  }
 
-    /* Active le panneau de bienvenue (colonne gauche bi-colonne) */
-    .welcome-panel {
-        display: flex; 
-        flex: 1;
-        min-width: 380px;
-        padding: 50px 30px;
-        justify-content: space-between; 
-        align-items: flex-start;
-        position: relative; 
-    }
-    
-    /* Rétablit l'effet de vague sur desktop */
-    .welcome-panel::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: -100px;
-        width: 250px;
-        height: 100%;
-        background: var(--card-bg);
-        transform: skewX(-15deg);
-        z-index: 1;
-        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    /* Alignement du contenu dans le panneau de bienvenue */
-    .welcome-panel .logo,
-    .welcome-panel h1,
-    .welcome-panel p,
-    .register-btn {
-        align-self: flex-start;
-        margin-left: 0; 
-    }
-    
-    .welcome-panel .logo {
-        margin-top: 0;
-        margin-bottom: auto;
-    }
-    
-    .welcome-panel h1 {
-        margin-top: auto; 
-    }
-    
-    .welcome-panel p {
-        margin-bottom: 30px; 
-    }
-    
-    .register-btn {
-        margin-top: auto; 
-    }
-
-
-    form {
-        flex: 1.1;
-        padding: 50px 45px;
-        margin-top: 0; 
-        justify-content: flex-start;
-    }
-    
-    input[type="submit"] {
-        margin-top: auto; 
-        width: 100%;
-    }
-    
-    input:not(input[type="submit"]):not(input[type="file"]):not(input[type="date"]), select, textarea {
-        margin-top: 25px;
-    }
-
-    form h3 {
-        margin-top: 40px;
-        font-size: 1.25rem;
-    }
-    
-    footer {
-        align-self: center; 
-    }
+  .welcome-panel::after {
+    display: none;               /* Optionnel : enlever la vague qui dépasse */
+  }
 }
+
+
 
