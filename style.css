@@ -403,10 +403,6 @@ nav{
     margin-bottom: 20px;
     color: #1A2A47;
     text-align: center;
-    font-weight:45px;
-}
-.Titre h2{
-    font-size:45px;
 }
 
 
@@ -440,7 +436,7 @@ nav{
     border-bottom: 1px solid #eee;
 }
 
-.auteur_commenataire {
+.auteur_commenatire {
      margin: 0;
     font-size: 16px;
     font-weight: 600;
@@ -472,9 +468,11 @@ nav{
  
 
 .champs_commentaire button {
-   margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #eee;
+    margin-top: 10px;
+    padding: 5px;
+     margin-left: 35%;
+    margin-right: 35%;
+    background-color: white;
     color: #1A2A47;
     border: 2px solid lightgray;
     border-radius: 8px;
@@ -482,13 +480,12 @@ nav{
 }
 
 .champs_commentaire button:hover {
-     cursor: pointer;
-    border-color: #eee;
-    color:white;
+    color: white;
+    cursor: pointer;
     background-color: rgba(60,126,255,0.6);
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1);
     transform: scale(1.05);
-    
+    border-color:#eee;
 }
 
 
@@ -502,29 +499,30 @@ nav{
 }
 
 #titleForm {
-    color: #1A2A47;
+    color:#1A2A47;
+    background-color:  white;
     border: 2px solid lightgray;
-    border-radius: 25px;
-    margin: 15px auto;         
-    width: fit-content;        
-    max-width: 80%;           
-    padding: 8px 16px;         
+    padding: 8px;
     text-align: center;
+    font-size: 16px;
     font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: clamp(12px, 3vw, 16px);
-    box-sizing: border-box;
+    height:20px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-right: 40%;
+    margin-left: 40%;
+    margin-top: 15px;
+
 }
 
 #titleForm:hover {
+    color: white;
     cursor: pointer;
-    border-color: white;
-    color:white;
     background-color: rgba(60,126,255,0.6);
     transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1);
+     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.1);
+    border-color:#eee;
 }
 
 #commentForm {
@@ -532,6 +530,8 @@ nav{
     flex-direction: column;
     gap: 10px;
     max-width: 400px;
+     margin-left: 35%;
+    margin-right: 35%;
 }
 
 .success {
@@ -543,6 +543,8 @@ nav{
     margin-bottom: 15px;
     font-weight: bold;
 }
+
+
 
 /* aide*/
 #aide{
@@ -1450,6 +1452,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
