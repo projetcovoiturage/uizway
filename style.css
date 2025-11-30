@@ -196,7 +196,7 @@ nav{
 
 .titre h2{
     color:lightgray;
-    font-size:200%;
+    font-size:45px;
    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     margin-left:0vh;
     position:relative;
@@ -1419,6 +1419,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
