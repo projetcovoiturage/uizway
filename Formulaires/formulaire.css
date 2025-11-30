@@ -248,7 +248,6 @@ footer {
         flex-direction: row;
     }
 
-    /* Le logo2 est masqué sur desktop */
     .logo2 {
         display: none; 
     }
@@ -261,7 +260,7 @@ footer {
         padding: 50px 30px;
         justify-content: space-between; 
         align-items: flex-start;
-        position: relative; /* Rétablit les positions pour ::after */
+        position: relative; 
     }
     
     /* Rétablit l'effet de vague sur desktop */
@@ -278,7 +277,6 @@ footer {
         box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
     }
     
-    /* Rétablit l'alignement vertical du contenu dans le panneau de bienvenue */
     .welcome-panel .logo,
     .welcome-panel h1,
     .welcome-panel p,
