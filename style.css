@@ -10,7 +10,7 @@ body{
     display: grid;
     height:100vh;
    /* background:linear-gradient(to bottom right, #002366, lightgray);*/
-background-image: url("back2.png");
+background-image: url("image/back2.png");
 background-position: center;
 
 background-repeat: no-repeat;
@@ -1419,6 +1419,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
