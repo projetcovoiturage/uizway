@@ -1,7 +1,7 @@
 :root {
     --primary-blue: #3c7eff; /* Bleu vif pour les actions */
     --primary-blue-hover: #2b63d6;
-    --header-bg: #002366; /* Bleu très foncé/marine pour la barre et le fond principal */
+    --header-bg: #0F1C3A; /* Bleu très foncé/marine pour la barre et le fond principal */
     --text-dark: #f0f0f0; /* Texte clair pour contraster avec le fond sombre */
     --text-light: #ffffff;
 }
@@ -176,5 +176,6 @@ header {
         padding: 15px 30px;
     }
 }
+
 
 
