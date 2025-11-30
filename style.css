@@ -404,6 +404,9 @@ nav{
     color: #1A2A47;
     text-align: center;
 }
+.Titre h2 {
+    font-size:45px;
+}
 
 
 .comments-container {
@@ -554,6 +557,7 @@ nav{
     color: #002366;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
+    font-size:45px;
     
 
 }
@@ -1452,6 +1456,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
