@@ -568,6 +568,13 @@ form {
     height: auto;
     margin: 30px;
 }
+.connexion video{
+    width: 100%;
+    max-width: 600px; /* taille max de la vidéo */
+    height: auto;     /* garantit que la vidéo garde ses proportions */
+    border-radius: 10px; /* optionnel */
+}
+
 
 /* notre équipe */
 
@@ -681,53 +688,57 @@ justify-content: center;
     font-family: 'Times New Roman', Times, serif;
 }
 
+@media (max-width: 900px) {
 
-/* Tablettes (768px à 1024px) */
-@media screen and (max-width: 1024px) {
-    .dev {
-        width: 350px;
-    }
-
-    .dev img {
-        height: 220px;
-        width: 200px;
-    }
-
-    a {
-        font-size: 18px;
-    }
-}
-
-/* Smartphones (moins de 768px) */
-@media screen and (max-width: 768px) {
     .devlps {
-        flex-direction: column; /* Les cartes s’empilent */
+        flex-direction: column;  /* les blocs en colonne */
         gap: 20px;
+        width: 100%;
         padding: 10px;
+        top: -15px;
+        right: 0;
+        left: 0;
     }
 
     .dev {
-        width: 90%; /* Prend presque toute la largeur */
+        width: 90%;   /* plus de largeur fixée */
+        max-width: 350px;
+        margin: 0 auto;
     }
 
     .dev img {
-        height: 200px;
-        width: 180px;
-    }
-
-    a {
-        font-size: 16px;
+        width: 150px;
+        height: 150px;
     }
 
     .top {
-        height: 150px;
-        padding: 10px;
+        height: auto;
+        padding: 30px 10px;
     }
 
     .top h1 {
-        font-size: 24px;
+        margin-top: 0;
+        font-size: 26px;
     }
 }
+
+@media (max-width: 500px) {
+
+    .dev img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .mission {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+
+
+       
+     
 
 
 /* Logo apparition */
@@ -1438,6 +1449,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
