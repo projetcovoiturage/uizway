@@ -561,7 +561,7 @@ form {
 
    
 }
-.container{
+.connexion{
    display: flex;
     justify-content: center;
     align-items: center; /* si tu veux centrer aussi verticalement */
@@ -1438,6 +1438,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
