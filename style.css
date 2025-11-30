@@ -543,7 +543,31 @@ form {
     font-weight: bold;
 }
 
+/* aide*/
+#aide{
+    background-color: whitesmoke;
+}
+.Aide h2{
+    color: #002366;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
 
+}
+.Aide p{
+    color: #002366;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
+   
+}
+.container{
+   display: flex;
+    justify-content: center;
+    align-items: center; /* si tu veux centrer aussi verticalement */
+    height: auto;
+    margin: 30px;
+}
 
 /* notre équipe */
 
@@ -1414,6 +1438,7 @@ body{
         bottom:10px;
     }
 }
+
 
 
 
