@@ -234,7 +234,7 @@ footer {
     font-size: 0.9rem;
 }
 
-@media (min-width: 851px) {
+@media (min-width: 350px) {
     
     body {
         padding: 40px 20px;
@@ -335,3 +335,4 @@ footer {
         align-self: center; 
     }
 }
+
